@@ -15,7 +15,6 @@ class Game:
         self.game_speed = 20
         self.x_pos_bg = 0
         self.y_pos_bg = 380
-
         self.player = Dinossaur()
 
     def run(self):
