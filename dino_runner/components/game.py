@@ -87,7 +87,7 @@ class Game:
 
     def draw_score(self):
         draw_message_component(
-            f"Pontos: {self.score}",
+            f"Score: {self.score}",
             self.screen,
             pos_x_center=1000,
             pos_y_center=50,
@@ -115,26 +115,26 @@ class Game:
                 pos_y_center=half_screen_height - 40
             )
         else:
-            draw_message_component("Pressione qualquer tecla para reiniciar o jogo.",
+            draw_message_component("Press any key to restart",
                 self.screen,
                 pos_y_center = half_screen_height + 140
                 )
             
             draw_message_component(
-                f"Sua pontuação: {self.score}",
+                f"Score: {self.score}",
                 self.screen,
                 pos_x_center=half_screen_height - 150
             )
 
             draw_message_component(
-                f"Tentativas: {self.death_count}",
+                f"Deaths: {self.death_count}",
                 self.screen, 
                 pos_x_center=900,
                 pos_y_center=300
                 )
             
             draw_message_component(
-                f"Recorde de pontuação: {self.high_score}",
+                f"High score: {self.high_score}",
                 self.screen,
                pos_y_center=half_screen_height - 100                
                 )
