@@ -1,5 +1,4 @@
-from dino_runner.components.game import Game
+from src.component.menu import main_menu
 
-if __name__ == "__main__":
-    game = Game()
-    game.execute()
+if __name__ == '__main__':
+    main_menu()
